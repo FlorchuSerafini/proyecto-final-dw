@@ -1,0 +1,1037 @@
+@import "__contacto";
+@import "__portfolio";
+@import "__quiensoy";
+@import "__servicios";
+@import "__varColors";
+
+@mixin fondo {
+    background-image: url("../img/triangulo.png");
+    background-position: right;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 120vh;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+#header {
+    width:100%;
+
+    #logo {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+
+/* Configuraciones navbar */
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+
+}
+
+.nav-link {
+    color: #85C28A;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #85C28A;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-right: 50px;
+
+}
+
+.nav-item:hover {
+    color: #FF493B !important;
+    font-weight: 700;
+}
+
+.navbar-nav {margin-left: 60%}
+
+#logo {
+
+    a:link,
+    a:visited,
+    a:active {
+        color: #85C28A;
+        text-decoration: none;
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+/* Configuraciones home*/
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include fondo;
+
+    #textoBienvenida {
+        width: 70%;
+
+        p {
+            margin-left: 15%;
+            color: #85C28A;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 30px;
+        }
+
+        h1 {
+            margin-left: 15%;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 6.5rem;
+            line-height: 7rem;
+        }
+    }
+}
+
+/* Configuraciones Footer*/
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #CDC1E0;
+    width: 100%;
+    height: 6%;
+
+    #iconos {
+        display: flex;
+        margin-left: 2%;
+    }
+
+    p{
+        margin-right: 3%;
+        padding-top:1%;
+    }
+
+    div {
+        margin: 10px;
+    }
+
+    #behance {
+        img {
+            width: 28px;
+            height: 17.5px;
+        }
+    }
+
+    #linkedin {
+
+        img {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    #instagram {
+
+        img {
+
+            width: 17px;
+            height: 17px;
+        }
+
+    }
+
+    #facebook {
+
+        img {
+            width: 11.5px;
+            height: 22px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1450px) {
+    
+    #main {
+        height: 100%;
+        margin-left:auto;
+        background-size:auto;
+    
+        #textoBienvenida {
+    
+            p {  color: black;
+                margin-left:-5%;
+                margin-top: -50%;
+            }
+    
+            h1 {
+              
+                margin-left: -5%;
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+
+
+    #mainQuienSoy {
+        width: 100%;
+        height: 150%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        #mainQuienSoy__container__quienSoy {
+            row-gap: 12%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:"foto"
+                                "texto" ;
+            margin-left: -25%;
+        
+            #mainQuienSoy__container__quienSoy__textoMain {
+                width: 100%;
+                height: 50%;
+
+                h1 {
+                    margin-top: -25%;
+                    color: black;
+
+                    }
+                p {
+                    margin-top:5%;
+
+                }   
+            }
+        
+            #mainQuienSoy__container__quienSoy__fotoPerfil {
+
+                img {
+                    margin-left:45%;
+                    height:90%;
+                    }
+            }
+        
+        
+        
+        
+        }
+        
+    }
+
+    #mainPortfolio {
+        height: 220%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        #mainPortfolio__container {
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:"trabajo1"
+                                "trabajo1"
+                                "trabajo2"
+                                "trabajo3"
+                                "trabajo4"
+                                "trabajo5" 
+                                "trabajo6"
+                                "trabajo6"
+                                ;
+        
+            
+        }
+    }
+    
+    #mainServicios {
+        width: 100%;
+        height: 200%;
+        background-image: url("../img/triangulo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h1 {
+            color: #85C28A;
+            font-weight: bold;
+            margin-left:10%
+            }
+    
+    
+        #mainServicios__container {
+            width:80%;
+            height:80%;
+            margin-left: 10%;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:"diseñografico" 
+                                "diseñouxui";
+            row-gap: 1%;
+    
+            #mainServicios__container__diseñoGrafico {
+                margin-top: 15%;
+                height:80%;
+                #mainServicios__container__diseñoGrafico__up {
+                
+                    margin-top: 15%;
+                    h2 {
+                        font-size: 45px;
+                        line-height: 60px;
+  
+                    }
+    
+                    img {
+                        margin-right: 5%;
+                        width: 100px;
+                        height: 100px;
+    
+                    }
+    
+                }
+    
+                #mainServicios__container__diseñoGrafico__bottom {
+                    display: flex;
+                    justify-content: center;
+
+                }
+                ul {
+                    margin-right: 7%;
+    
+                    li {
+                        font-family: Montserrat;
+                        font-size: 15px !important;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 40px;
+                        letter-spacing: 0em;
+                        text-align: left;
+    
+                    }
+                }
+    
+    
+    
+            }
+    
+            #mainServicios__container__diseñoUxUi {
+                margin-top: 15%;
+                height:100%;
+    
+                #mainServicios__container__diseñoUxUi__up {
+                
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15%;
+                    h2 {
+                        font-size: 45px;
+                        line-height: 60px;
+  
+                    }
+    
+                    img {
+                        margin-right: 5%;
+                        width: 100px;
+                        height: 100px;
+    
+                    }
+    
+    
+                }
+    
+                #mainServicios__container__diseñoUxUi__bottom {
+                    
+                    display: flex;
+                    justify-content: center;
+                    margin: 5%;
+                }
+                ul {
+                    margin-right: 7%;
+    
+                    li {
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 100px;
+                        letter-spacing: 0em;
+                        text-align: left;
+    
+                    }
+                }
+    
+    
+            }
+    
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    #main {
+        height: 100%;
+        margin-left:auto;
+        background-size:auto;
+    
+        #textoBienvenida {
+    
+            p {  color: black;
+                margin-left:-5%;
+                margin-top: -50%;
+            }
+    
+            h1 {
+              
+                margin-left: -5%;
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+
+
+    #mainQuienSoy {
+        width: 100%;
+        height: 150%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        #mainQuienSoy__container__quienSoy {
+            row-gap: 12%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:"foto"
+                                "texto" ;
+            margin-left: -25%;
+        
+            #mainQuienSoy__container__quienSoy__textoMain {
+                width: 100%;
+                height: 50%;
+
+                h1 {
+                    margin-top: -25%;
+                    color: black;
+
+                    }
+                p {
+                    margin-top:5%;
+
+                }   
+            }
+        
+            #mainQuienSoy__container__quienSoy__fotoPerfil {
+
+                img {
+                    margin-left:45%;
+                    height:75%;
+                    }
+            }
+        
+        
+        
+        
+        }
+        
+    }
+
+    #mainPortfolio {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        #mainPortfolio__container {
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:"trabajo1"
+                                "trabajo1"
+                                "trabajo2"
+                                "trabajo3"
+                                "trabajo4"
+                                "trabajo5" 
+                                "trabajo6"
+                                "trabajo6"
+                                ;
+        
+            
+        }
+    }
+    
+    #mainServicios {
+        width: 100%;
+        height: 200%;
+        background-image: url("../img/triangulo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h1 {
+            color: #85C28A;
+            font-weight: bold;
+            margin-left:10%
+            }
+    
+    
+        #mainServicios__container {
+            width:80%;
+            height:80%;
+            margin-left: 10%;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:"diseñografico" 
+                                "diseñouxui";
+            row-gap: 1%;
+    
+            #mainServicios__container__diseñoGrafico {
+                margin-top: 15%;
+                height:80%;
+                #mainServicios__container__diseñoGrafico__up {
+                
+                    margin-top: 15%;
+                    h2 {
+                        font-size: 45px;
+                        line-height: 60px;
+  
+                    }
+    
+                    img {
+                        margin-right: 5%;
+                        width: 100px;
+                        height: 100px;
+    
+                    }
+    
+                }
+    
+                #mainServicios__container__diseñoGrafico__bottom {
+                    display: flex;
+                    justify-content: center;
+
+                }
+                ul {
+                    margin-right: 7%;
+    
+                    li {
+                        font-family: Montserrat;
+                        font-size: 15px !important;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 40px;
+                        letter-spacing: 0em;
+                        text-align: left;
+    
+                    }
+                }
+    
+    
+    
+            }
+    
+            #mainServicios__container__diseñoUxUi {
+                margin-top: 15%;
+                height:100%;
+    
+                #mainServicios__container__diseñoUxUi__up {
+                
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15%;
+                    h2 {
+                        font-size: 45px;
+                        line-height: 60px;
+  
+                    }
+    
+                    img {
+                        margin-right: 5%;
+                        width: 100px;
+                        height: 100px;
+    
+                    }
+    
+    
+                }
+    
+                #mainServicios__container__diseñoUxUi__bottom {
+                    
+                    display: flex;
+                    justify-content: center;
+                    margin: 5%;
+                }
+                ul {
+                    margin-right: 7%;
+    
+                    li {
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 100px;
+                        letter-spacing: 0em;
+                        text-align: left;
+    
+                    }
+                }
+    
+    
+            }
+    
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+
+    #main {
+        margin-left:auto;
+        background-size:auto;
+    
+        #textoBienvenida {
+    
+            p {
+                margin-left:-5%;
+                margin-top: -50%;
+            }
+    
+            h1 {
+                margin-left: -5%;
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+
+
+    #mainQuienSoy {
+        width: 100%;
+        height: 110%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        #mainQuienSoy__container__quienSoy {
+            row-gap: 20%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:"foto"
+                                "texto" ;
+            margin-left: -25%;
+        
+            #mainQuienSoy__container__quienSoy__textoMain {
+                width: 100%;
+                height: 50%;
+
+                h1 {
+                    color: black;
+
+                    }
+                p {
+                    margin-top:5%;
+
+                }   
+            }
+        
+            #mainQuienSoy__container__quienSoy__fotoPerfil {
+
+                img {
+                    margin-left:45%;
+                    height:100%;
+                    }
+            }
+        
+        
+        
+        
+        }
+        
+    }
+
+    #mainPortfolio {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        #mainPortfolio__container {
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:"trabajo1"
+                                "trabajo1"
+                                "trabajo2"
+                                "trabajo3"
+                                "trabajo4"
+                                "trabajo5" 
+                                "trabajo6"
+                                "trabajo6"
+                                ;
+        
+            
+        }
+    }
+    
+    #mainServicios {
+        width: 100%;
+        height: 200%;
+        background-image: url("../img/triangulo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h1 {
+            color: #85C28A;
+            font-weight: bold;
+            margin-left:10%
+            }
+    
+    
+        #mainServicios__container {
+            width:80%;
+            height:80%;
+            margin-left: 10%;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:"diseñografico" 
+                                "diseñouxui";
+            row-gap: 1%;
+    
+            #mainServicios__container__diseñoGrafico {
+                margin-top: 15%;
+                height:80%;
+                #mainServicios__container__diseñoGrafico__up {
+                
+                    margin-top: 15%;
+                    h2 {
+                        font-size: 45px;
+                        line-height: 60px;
+  
+                    }
+    
+                    img {
+                        margin-right: 5%;
+                        width: 100px;
+                        height: 100px;
+    
+                    }
+    
+                }
+    
+                #mainServicios__container__diseñoGrafico__bottom {
+                    display: flex;
+                    justify-content: center;
+
+                }
+                ul {
+                    margin-right: 7%;
+    
+                    li {
+                        font-family: Montserrat;
+                        font-size: 15px !important;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 40px;
+                        letter-spacing: 0em;
+                        text-align: left;
+    
+                    }
+                }
+    
+    
+    
+            }
+    
+            #mainServicios__container__diseñoUxUi {
+                margin-top: 15%;
+                height:100%;
+    
+                #mainServicios__container__diseñoUxUi__up {
+                
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15%;
+                    h2 {
+                        font-size: 45px;
+                        line-height: 60px;
+  
+                    }
+    
+                    img {
+                        margin-right: 5%;
+                        width: 100px;
+                        height: 100px;
+    
+                    }
+    
+    
+                }
+    
+                #mainServicios__container__diseñoUxUi__bottom {
+                    
+                    display: flex;
+                    justify-content: center;
+                    margin: 5%;
+                }
+                ul {
+                    margin-right: 7%;
+    
+                    li {
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 100px;
+                        letter-spacing: 0em;
+                        text-align: left;
+    
+                    }
+                }
+    
+    
+            }
+    
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    #main {
+        margin-left:auto;
+        background-size:auto;
+    
+        #textoBienvenida {
+    
+            p {
+                margin-left:-5%;
+                margin-top: -50%;
+            }
+    
+            h1 {
+                margin-left: -5%;
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+
+
+    #mainQuienSoy {
+        width: 100%;
+        height: 150%;
+    
+        #mainQuienSoy__container__quienSoy {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:"foto"
+                                "texto" ;
+            row-gap: 5%;
+            margin-left: -25%;
+        
+            #mainQuienSoy__container__quienSoy__textoMain {
+                width: 100%;
+
+
+                h1 {
+                    color: black;
+
+                    }
+                p {
+                    margin-top:5%;
+
+                }   
+            }
+        
+            #mainQuienSoy__container__quienSoy__fotoPerfil {
+
+                img {
+                    
+                    margin-left:45%;
+                    height:50%;
+                    }
+            }
+        
+        
+        
+        
+        }
+        
+    }
+
+    #mainPortfolio {
+        height: 100%;
+    
+        #mainPortfolio__container {
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:"trabajo1"
+                                "trabajo1"
+                                "trabajo2"
+                                "trabajo3"
+                                "trabajo4"
+                                "trabajo5" 
+                                "trabajo6"
+                                "trabajo6"
+                                ;
+        
+            
+        }
+    }
+    
+    #mainServicios {
+        width: 100%;
+        height: 200%;
+        background-image: url("../img/triangulo.png");
+        background-size: 100%;
+        h1 {
+            color: #85C28A;
+            font-weight: bold;
+            margin-left:10%
+            }
+    
+    
+        #mainServicios__container {
+            width:80%;
+            height:80%;
+            margin-left: 10%;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:"diseñografico" 
+                                "diseñouxui";
+            row-gap: 1%;
+    
+            #mainServicios__container__diseñoGrafico {
+                margin-top: 15%;
+                height:80%;
+                #mainServicios__container__diseñoGrafico__up {
+                
+                    margin-top: 15%;
+                    h2 {
+                        font-size: 45px;
+                        line-height: 60px;
+  
+                    }
+    
+                    img {
+                        margin-right: 5%;
+                        width: 100px;
+                        height: 100px;
+    
+                    }
+    
+                }
+    
+                #mainServicios__container__diseñoGrafico__bottom {
+                    display: flex;
+                    justify-content: center;
+
+                }
+                ul {
+                    margin-right: 7%;
+    
+                    li {
+                        font-family: Montserrat;
+                        font-size: 15px !important;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 40px;
+                        letter-spacing: 0em;
+                        text-align: left;
+    
+                    }
+                }
+    
+    
+    
+            }
+    
+            #mainServicios__container__diseñoUxUi {
+                margin-top: 15%;
+                height:100%;
+    
+                #mainServicios__container__diseñoUxUi__up {
+                
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15%;
+                    h2 {
+                        font-size: 45px;
+                        line-height: 60px;
+  
+                    }
+    
+                    img {
+                        margin-right: 5%;
+                        width: 100px;
+                        height: 100px;
+    
+                    }
+    
+    
+                }
+    
+                #mainServicios__container__diseñoUxUi__bottom {
+                    
+                    display: flex;
+                    justify-content: center;
+                    margin: 5%;
+                }
+                ul {
+                    margin-right: 7%;
+    
+                    li {
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 100px;
+                        letter-spacing: 0em;
+                        text-align: left;
+    
+                    }
+                }
+    
+    
+            }
+    
+        }
+
+    }
+
+
+}

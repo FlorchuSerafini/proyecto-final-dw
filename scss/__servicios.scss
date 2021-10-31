@@ -1,0 +1,142 @@
+@import "__varColors";
+
+#mainServicios {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/triangulo.png");
+    background-size: 100%;
+    h1 {
+        margin-top: 5%;
+        color: $verdeGral;
+        font-weight: bold;
+        margin-left:10%
+        }
+
+
+    #mainServicios__container {
+        width:80%;
+        height:80%;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "diseñografico diseñouxui";
+        column-gap: 1%;
+
+        #mainServicios__container__diseñoGrafico {
+            grid-area: diseñografico;
+            background-color: $tonoViolet;
+
+            #mainServicios__container__diseñoGrafico__up {
+            
+                display: flex;
+                justify-content: center;
+                margin-top: 15%;
+                h2 {
+                    font-family: Montserrat;
+                    font-size: 64px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 66px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+
+                img {
+                    margin-right: 5%;
+                    width: 126px;
+                    height: 126px;
+
+                }
+
+            }
+
+            #mainServicios__container__diseñoGrafico__bottom {
+                display: flex;
+                justify-content: center;
+                margin: 5%;
+            }
+            ul {
+                margin-right: 15%;
+
+                li {
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 100px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+            }
+
+
+
+        }
+
+        #mainServicios__container__diseñoUxUi {
+            grid-area: diseñouxui;
+            background-color: $tonoViolet;
+
+            #mainServicios__container__diseñoUxUi__up {
+            
+                display: flex;
+                justify-content: center;
+                margin-top: 15%;
+                h2 {
+                    font-family: Montserrat;
+                    font-size: 64px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 66px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+
+                img {
+                    margin-right: 5%;
+                    width: 126px;
+                    height: 126px;
+
+                }
+
+
+            }
+
+            #mainServicios__container__diseñoUxUi__bottom {
+                
+                display: flex;
+                justify-content: center;
+                margin: 5%;
+            }
+            ul {
+                margin-right: 15%;
+
+                li {
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 100px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+            }
+
+
+        }
+
+    }
+
+    .line {
+       color: white;
+       height: 8px;
+       width:50%;
+       margin-left:25%;
+    }
+
+    }

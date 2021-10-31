@@ -1,0 +1,93 @@
+@import "__varColors";
+
+#mainPortfolio {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/triangulo.png");
+    background-size: 100%;
+    h1 {
+        margin-top: 5%;
+        color: $verdeGral;
+        font-weight: bold;
+        margin-left:20%
+        }
+
+    #mainPortfolio__container {
+
+        width: 55%;
+        height: 80%;
+        margin-left:20%;
+        display: grid;
+        column-gap: 1%;
+        row-gap: 1%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:"trabajo1 trabajo2"
+                            "trabajo1 trabajo3"
+                            "trabajo4 trabajo6"
+                            "trabajo5 trabajo6";
+    
+            #mainPortfolio__container__work1 {
+                grid-area: trabajo1;
+                    a {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+            }
+            #mainPortfolio__container__work2 {
+                grid-area: trabajo2;
+                    a {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+            }
+            #mainPortfolio__container__work3 {
+                grid-area: trabajo3;
+                    a {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+            }
+            #mainPortfolio__container__work4 {
+                grid-area: trabajo4;
+                    a {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+            }
+            #mainPortfolio__container__work5 {
+                grid-area: trabajo5;
+                    a {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+            }
+            #mainPortfolio__container__work6 {
+                grid-area: trabajo6;
+                    a {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+            }
+    
+    }
+}
+

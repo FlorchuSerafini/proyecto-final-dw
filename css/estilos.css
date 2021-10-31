@@ -1,0 +1,810 @@
+@charset "UTF-8";
+#mainContacto {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/triangulo.png");
+  background-size: 100%;
+  /* WebKit */ }
+  #mainContacto h1 {
+    margin-top: 5%;
+    color: verdeGral;
+    font-weight: bold;
+    margin-left: 20%; }
+  #mainContacto #mainContacto__container {
+    margin-top: 5%;
+    margin-left: 20%;
+    height: 431px;
+    width: 1105px;
+    left: 168px;
+    top: 352px;
+    border-radius: 0px;
+    background-color: #CDC1E0; }
+    #mainContacto #mainContacto__container #mainContacto__container__tituloForm {
+      height: 206px;
+      width: 377px;
+      border-radius: nullpx; }
+      #mainContacto #mainContacto__container #mainContacto__container__tituloForm h1 {
+        color: black;
+        padding-top: 25%;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left; }
+    #mainContacto #mainContacto__container #mainContacto__container__formBoost {
+      margin-top: -15%;
+      margin-left: 50%; }
+      #mainContacto #mainContacto__container #mainContacto__container__formBoost #fNombre {
+        width: 433px;
+        height: 67px;
+        background: #FFFFFF;
+        border: 0;
+        margin: 1%; }
+      #mainContacto #mainContacto__container #mainContacto__container__formBoost #fMail {
+        width: 433px;
+        height: 67px;
+        background: #FFFFFF;
+        border: 0;
+        margin: 1%; }
+      #mainContacto #mainContacto__container #mainContacto__container__formBoost #fConsulta {
+        width: 433px;
+        height: 150px;
+        background: #FFFFFF;
+        border: 0;
+        margin: 1%; }
+  #mainContacto .btn {
+    width: 230px;
+    height: 50px;
+    background: #3C3C3B;
+    border-radius: 5px;
+    color: white; }
+  #mainContacto ::-webkit-input-placeholder {
+    color: #DADADA; }
+
+#mainPortfolio {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/triangulo.png");
+  background-size: 100%; }
+  #mainPortfolio h1 {
+    margin-top: 5%;
+    color: #85C28A;
+    font-weight: bold;
+    margin-left: 20%; }
+  #mainPortfolio #mainPortfolio__container {
+    width: 55%;
+    height: 80%;
+    margin-left: 20%;
+    display: grid;
+    column-gap: 1%;
+    row-gap: 1%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "trabajo1 trabajo2" "trabajo1 trabajo3" "trabajo4 trabajo6" "trabajo5 trabajo6"; }
+    #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work1 {
+      grid-area: trabajo1; }
+      #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work1 a img {
+        width: 100%;
+        height: 100%; }
+    #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work2 {
+      grid-area: trabajo2; }
+      #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work2 a img {
+        width: 100%;
+        height: 100%; }
+    #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work3 {
+      grid-area: trabajo3; }
+      #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work3 a img {
+        width: 100%;
+        height: 100%; }
+    #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work4 {
+      grid-area: trabajo4; }
+      #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work4 a img {
+        width: 100%;
+        height: 100%; }
+    #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work5 {
+      grid-area: trabajo5; }
+      #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work5 a img {
+        width: 100%;
+        height: 100%; }
+    #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work6 {
+      grid-area: trabajo6; }
+      #mainPortfolio #mainPortfolio__container #mainPortfolio__container__work6 a img {
+        width: 100%;
+        height: 100%; }
+
+#mainQuienSoy {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/triangulo.png");
+  background-size: 100%; }
+  #mainQuienSoy #mainQuienSoy__container__quienSoy {
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "texto foto"; }
+    #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain {
+      height: 50%;
+      grid-area: texto;
+      margin-left: 25%;
+      margin-top: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain h1 {
+        color: #85C28A;
+        font-weight: bold;
+        margin-bottom: 5%; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain p {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left; }
+    #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__fotoPerfil {
+      grid-area: foto; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__fotoPerfil img {
+        margin-top: 5%;
+        margin-left: 25%;
+        width: 60%;
+        height: 63%; }
+
+#mainServicios {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/triangulo.png");
+  background-size: 100%; }
+  #mainServicios h1 {
+    margin-top: 5%;
+    color: #85C28A;
+    font-weight: bold;
+    margin-left: 10%; }
+  #mainServicios #mainServicios__container {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "diseñografico diseñouxui";
+    column-gap: 1%; }
+    #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico {
+      grid-area: diseñografico;
+      background-color: #CDC1E0; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up h2 {
+          font-family: Montserrat;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 66px;
+          letter-spacing: 0em;
+          text-align: left; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up img {
+          margin-right: 5%;
+          width: 126px;
+          height: 126px; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__bottom {
+        display: flex;
+        justify-content: center;
+        margin: 5%; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul {
+        margin-right: 15%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul li {
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 100px;
+          letter-spacing: 0em;
+          text-align: left; }
+    #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi {
+      grid-area: diseñouxui;
+      background-color: #CDC1E0; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up h2 {
+          font-family: Montserrat;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 66px;
+          letter-spacing: 0em;
+          text-align: left; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up img {
+          margin-right: 5%;
+          width: 126px;
+          height: 126px; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__bottom {
+        display: flex;
+        justify-content: center;
+        margin: 5%; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul {
+        margin-right: 15%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul li {
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 100px;
+          letter-spacing: 0em;
+          text-align: left; }
+  #mainServicios .line {
+    color: white;
+    height: 8px;
+    width: 50%;
+    margin-left: 25%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100vw;
+  height: 120vh;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; }
+
+#header {
+  width: 100%; }
+  #header #logo {
+    font-size: 1rem;
+    font-weight: bold; }
+
+/* Configuraciones navbar */
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 15px; }
+
+.nav-link {
+  color: #85C28A; }
+
+.bg-light {
+  background-color: white !important; }
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #85C28A;
+  font-weight: bold; }
+
+.nav-item {
+  margin-right: 50px; }
+
+.nav-item:hover {
+  color: #FF493B !important;
+  font-weight: 700; }
+
+.navbar-nav {
+  margin-left: 60%; }
+
+#logo a:link,
+#logo a:visited,
+#logo a:active {
+  color: #85C28A;
+  text-decoration: none;
+  outline: none;
+  text-decoration: none; }
+
+/* Configuraciones home*/
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/triangulo.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  #main #textoBienvenida {
+    width: 70%; }
+    #main #textoBienvenida p {
+      margin-left: 15%;
+      color: #85C28A;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 30px; }
+    #main #textoBienvenida h1 {
+      margin-left: 15%;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 6.5rem;
+      line-height: 7rem; }
+
+/* Configuraciones Footer*/
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #CDC1E0;
+  width: 100%;
+  height: 6%; }
+  #footer #iconos {
+    display: flex;
+    margin-left: 2%; }
+  #footer p {
+    margin-right: 3%;
+    padding-top: 1%; }
+  #footer div {
+    margin: 10px; }
+  #footer #behance img {
+    width: 28px;
+    height: 17.5px; }
+  #footer #linkedin img {
+    width: 22px;
+    height: 22px; }
+  #footer #instagram img {
+    width: 17px;
+    height: 17px; }
+  #footer #facebook img {
+    width: 11.5px;
+    height: 22px; }
+
+@media screen and (max-width: 1450px) {
+  #main {
+    height: 100%;
+    margin-left: auto;
+    background-size: auto; }
+    #main #textoBienvenida p {
+      color: black;
+      margin-left: -5%;
+      margin-top: -50%; }
+    #main #textoBienvenida h1 {
+      margin-left: -5%;
+      font-size: 2rem;
+      line-height: 2.5rem; }
+  #mainQuienSoy {
+    width: 100%;
+    height: 150%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #mainQuienSoy #mainQuienSoy__container__quienSoy {
+      row-gap: 12%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "foto" "texto";
+      margin-left: -25%; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain {
+        width: 100%;
+        height: 50%; }
+        #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain h1 {
+          margin-top: -25%;
+          color: black; }
+        #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain p {
+          margin-top: 5%; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__fotoPerfil img {
+        margin-left: 45%;
+        height: 90%; }
+  #mainPortfolio {
+    height: 220%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #mainPortfolio #mainPortfolio__container {
+      width: 60%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "trabajo1" "trabajo1" "trabajo2" "trabajo3" "trabajo4" "trabajo5"  "trabajo6" "trabajo6"; }
+  #mainServicios {
+    width: 100%;
+    height: 200%;
+    background-image: url("../img/triangulo.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #mainServicios h1 {
+      color: #85C28A;
+      font-weight: bold;
+      margin-left: 10%; }
+    #mainServicios #mainServicios__container {
+      width: 80%;
+      height: 80%;
+      margin-left: 10%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "diseñografico"  "diseñouxui";
+      row-gap: 1%; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico {
+        margin-top: 15%;
+        height: 80%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up {
+          margin-top: 15%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up h2 {
+            font-size: 45px;
+            line-height: 60px; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up img {
+            margin-right: 5%;
+            width: 100px;
+            height: 100px; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__bottom {
+          display: flex;
+          justify-content: center; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul {
+          margin-right: 7%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul li {
+            font-family: Montserrat;
+            font-size: 15px !important;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: left; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi {
+        margin-top: 15%;
+        height: 100%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up {
+          display: flex;
+          justify-content: center;
+          margin-top: 15%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up h2 {
+            font-size: 45px;
+            line-height: 60px; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up img {
+            margin-right: 5%;
+            width: 100px;
+            height: 100px; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__bottom {
+          display: flex;
+          justify-content: center;
+          margin: 5%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul {
+          margin-right: 7%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul li {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100px;
+            letter-spacing: 0em;
+            text-align: left; } }
+
+@media screen and (max-width: 950px) {
+  #main {
+    height: 100%;
+    margin-left: auto;
+    background-size: auto; }
+    #main #textoBienvenida p {
+      color: black;
+      margin-left: -5%;
+      margin-top: -50%; }
+    #main #textoBienvenida h1 {
+      margin-left: -5%;
+      font-size: 2rem;
+      line-height: 2.5rem; }
+  #mainQuienSoy {
+    width: 100%;
+    height: 150%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #mainQuienSoy #mainQuienSoy__container__quienSoy {
+      row-gap: 12%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "foto" "texto";
+      margin-left: -25%; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain {
+        width: 100%;
+        height: 50%; }
+        #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain h1 {
+          margin-top: -25%;
+          color: black; }
+        #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain p {
+          margin-top: 5%; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__fotoPerfil img {
+        margin-left: 45%;
+        height: 75%; }
+  #mainPortfolio {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #mainPortfolio #mainPortfolio__container {
+      width: 60%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "trabajo1" "trabajo1" "trabajo2" "trabajo3" "trabajo4" "trabajo5"  "trabajo6" "trabajo6"; }
+  #mainServicios {
+    width: 100%;
+    height: 200%;
+    background-image: url("../img/triangulo.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #mainServicios h1 {
+      color: #85C28A;
+      font-weight: bold;
+      margin-left: 10%; }
+    #mainServicios #mainServicios__container {
+      width: 80%;
+      height: 80%;
+      margin-left: 10%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "diseñografico"  "diseñouxui";
+      row-gap: 1%; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico {
+        margin-top: 15%;
+        height: 80%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up {
+          margin-top: 15%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up h2 {
+            font-size: 45px;
+            line-height: 60px; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up img {
+            margin-right: 5%;
+            width: 100px;
+            height: 100px; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__bottom {
+          display: flex;
+          justify-content: center; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul {
+          margin-right: 7%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul li {
+            font-family: Montserrat;
+            font-size: 15px !important;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: left; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi {
+        margin-top: 15%;
+        height: 100%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up {
+          display: flex;
+          justify-content: center;
+          margin-top: 15%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up h2 {
+            font-size: 45px;
+            line-height: 60px; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up img {
+            margin-right: 5%;
+            width: 100px;
+            height: 100px; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__bottom {
+          display: flex;
+          justify-content: center;
+          margin: 5%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul {
+          margin-right: 7%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul li {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100px;
+            letter-spacing: 0em;
+            text-align: left; } }
+
+@media screen and (max-width: 730px) {
+  #main {
+    margin-left: auto;
+    background-size: auto; }
+    #main #textoBienvenida p {
+      margin-left: -5%;
+      margin-top: -50%; }
+    #main #textoBienvenida h1 {
+      margin-left: -5%;
+      font-size: 2rem;
+      line-height: 2.5rem; }
+  #mainQuienSoy {
+    width: 100%;
+    height: 110%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #mainQuienSoy #mainQuienSoy__container__quienSoy {
+      row-gap: 20%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "foto" "texto";
+      margin-left: -25%; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain {
+        width: 100%;
+        height: 50%; }
+        #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain h1 {
+          color: black; }
+        #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain p {
+          margin-top: 5%; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__fotoPerfil img {
+        margin-left: 45%;
+        height: 100%; }
+  #mainPortfolio {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #mainPortfolio #mainPortfolio__container {
+      width: 60%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "trabajo1" "trabajo1" "trabajo2" "trabajo3" "trabajo4" "trabajo5"  "trabajo6" "trabajo6"; }
+  #mainServicios {
+    width: 100%;
+    height: 200%;
+    background-image: url("../img/triangulo.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #mainServicios h1 {
+      color: #85C28A;
+      font-weight: bold;
+      margin-left: 10%; }
+    #mainServicios #mainServicios__container {
+      width: 80%;
+      height: 80%;
+      margin-left: 10%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "diseñografico"  "diseñouxui";
+      row-gap: 1%; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico {
+        margin-top: 15%;
+        height: 80%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up {
+          margin-top: 15%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up h2 {
+            font-size: 45px;
+            line-height: 60px; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up img {
+            margin-right: 5%;
+            width: 100px;
+            height: 100px; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__bottom {
+          display: flex;
+          justify-content: center; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul {
+          margin-right: 7%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul li {
+            font-family: Montserrat;
+            font-size: 15px !important;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: left; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi {
+        margin-top: 15%;
+        height: 100%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up {
+          display: flex;
+          justify-content: center;
+          margin-top: 15%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up h2 {
+            font-size: 45px;
+            line-height: 60px; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up img {
+            margin-right: 5%;
+            width: 100px;
+            height: 100px; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__bottom {
+          display: flex;
+          justify-content: center;
+          margin: 5%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul {
+          margin-right: 7%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul li {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100px;
+            letter-spacing: 0em;
+            text-align: left; } }
+
+@media screen and (max-width: 500px) {
+  #main {
+    margin-left: auto;
+    background-size: auto; }
+    #main #textoBienvenida p {
+      margin-left: -5%;
+      margin-top: -50%; }
+    #main #textoBienvenida h1 {
+      margin-left: -5%;
+      font-size: 2rem;
+      line-height: 2.5rem; }
+  #mainQuienSoy {
+    width: 100%;
+    height: 150%; }
+    #mainQuienSoy #mainQuienSoy__container__quienSoy {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "foto" "texto";
+      row-gap: 5%;
+      margin-left: -25%; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain {
+        width: 100%; }
+        #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain h1 {
+          color: black; }
+        #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__textoMain p {
+          margin-top: 5%; }
+      #mainQuienSoy #mainQuienSoy__container__quienSoy #mainQuienSoy__container__quienSoy__fotoPerfil img {
+        margin-left: 45%;
+        height: 50%; }
+  #mainPortfolio {
+    height: 100%; }
+    #mainPortfolio #mainPortfolio__container {
+      width: 60%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "trabajo1" "trabajo1" "trabajo2" "trabajo3" "trabajo4" "trabajo5"  "trabajo6" "trabajo6"; }
+  #mainServicios {
+    width: 100%;
+    height: 200%;
+    background-image: url("../img/triangulo.png");
+    background-size: 100%; }
+    #mainServicios h1 {
+      color: #85C28A;
+      font-weight: bold;
+      margin-left: 10%; }
+    #mainServicios #mainServicios__container {
+      width: 80%;
+      height: 80%;
+      margin-left: 10%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "diseñografico"  "diseñouxui";
+      row-gap: 1%; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico {
+        margin-top: 15%;
+        height: 80%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up {
+          margin-top: 15%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up h2 {
+            font-size: 45px;
+            line-height: 60px; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__up img {
+            margin-right: 5%;
+            width: 100px;
+            height: 100px; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico #mainServicios__container__diseñoGrafico__bottom {
+          display: flex;
+          justify-content: center; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul {
+          margin-right: 7%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoGrafico ul li {
+            font-family: Montserrat;
+            font-size: 15px !important;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: left; }
+      #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi {
+        margin-top: 15%;
+        height: 100%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up {
+          display: flex;
+          justify-content: center;
+          margin-top: 15%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up h2 {
+            font-size: 45px;
+            line-height: 60px; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__up img {
+            margin-right: 5%;
+            width: 100px;
+            height: 100px; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi #mainServicios__container__diseñoUxUi__bottom {
+          display: flex;
+          justify-content: center;
+          margin: 5%; }
+        #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul {
+          margin-right: 7%; }
+          #mainServicios #mainServicios__container #mainServicios__container__diseñoUxUi ul li {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100px;
+            letter-spacing: 0em;
+            text-align: left; } }

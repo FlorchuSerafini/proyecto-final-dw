@@ -1,0 +1,60 @@
+@import "__varColors";
+
+#mainQuienSoy {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/triangulo.png");
+    background-size: 100%;
+
+    #mainQuienSoy__container__quienSoy {
+        margin-top: 5%;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "texto foto";
+    
+    
+        #mainQuienSoy__container__quienSoy__textoMain {
+            height: 50%;
+            grid-area: texto;
+            margin-left:25%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h1 {
+                color: $verdeGral;
+                font-weight: bold;
+                margin-bottom: 5%;
+                }
+            p {
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+            }   
+        }
+    
+        #mainQuienSoy__container__quienSoy__fotoPerfil {
+            grid-area: foto;
+            img {
+                margin-top:5%;
+                margin-left: 25%;
+                width: 60%;
+                height:63%;
+                }
+        }
+    
+    
+    
+    
+    }
+    
+}
+
+
+
